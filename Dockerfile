@@ -7,6 +7,7 @@ COPY . /usr/src/goof
 WORKDIR /usr/src/goof
 
 RUN npm update
+RUN npm install busboy@0.3.1 
 RUN npm install
 EXPOSE 3001
 EXPOSE 9229
